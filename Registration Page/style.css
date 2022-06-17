@@ -1,0 +1,130 @@
+body{
+    background-image: url(./image/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: Poppins, Arial;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+h1{
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0%;
+    width: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-top: 2em;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 7px hsla(0, 0%, 0%, 0.1);
+}
+
+input{
+    margin-bottom: 1.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: 1.5em;
+    border-radius: 5px;
+    border: 1px solid hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 26%);
+    font-weight: 700;
+    padding-left: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+input:active{
+    border: 1px solid hsl(248, 32%, 49%);
+    color: hsl(248, 32%, 49%);
+}
+
+.input[data-error]::before{
+    border-color: hsl(248, 32%, 49%);
+}
+
+input[data-error]::after{
+    content: attr(data-error);
+    border-color: hsl(0, 100%, 74%);
+}
+
+/*
+input:invalid{
+    border-color: hsl(0, 100%, 74%);
+}
+*/
+
+input[type=submit]{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    margin-bottom: 0.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type=submit]:active{
+    background-color: hsla(154, 59%, 51%, 0.5);
+}
+
+
+
+span{
+    color: hsl(0, 100%, 74%);
+}
+
+.heading-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    margin-top: 5em;
+}
+
+.heading-para{
+    font-family: Poppins, Arial;
+    font-weight: 400;
+    color: white;
+    width: 70%;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    width: 50%;
+}
+
+.free-trial-div{
+    display: flex;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    width: 70%;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 7px hsla(0, 0%, 0%, 0.1);
+}
+
+.by-clicking{
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(246, 25%, 77%);
+    justify-content: center;
+    text-align: center;
+}
